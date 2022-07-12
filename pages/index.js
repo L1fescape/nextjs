@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic'
 
-const HomeWithNoSSR = dynamic(() => import('../components/home').then(() => {
+const HomeWithNoSSR = dynamic(() => import('../components/home').then((component) => {
   return new Promise(resolve => {
-    setTimeout(resolve, 2000)
+    setTimeout(() => resolve(component), 2000)
   })
 }), {
   ssr: false
