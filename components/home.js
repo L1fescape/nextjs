@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
 import styles from '../styles/Home.module.css'
 
 
 export default function Home() {
-  throw new Error('asdf')
   return (
     <div className={styles.container}>
       <Head>
