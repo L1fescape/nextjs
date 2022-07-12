@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  return
+  throw new Error('oh no')
   return <Component {...pageProps} />
 }
 
